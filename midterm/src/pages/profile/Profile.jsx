@@ -13,21 +13,24 @@ const Profile = () => {
     const handleImageUpload = (event) => {
         const file = event.target.files[0];
         setImageFile(file);
+        console.log(file)
     };
 
     return (
-        <div className={classes.main}>
+        <div >
             <img
                 src={imageFile}
                 alt="Выбрать файл"
             />
-
-            <MyInput id="audioImage" type="file" accept="image/*" onChange={handleImageUpload} />
-            <MyInput value={name} onChange={e => setName(e.target.value)} type="text" placeholder="Name"/>
-            <MyInput value={surname} onChange={e => setSurname(e.target.value)} type="text" placeholder="Surname"/>
-            <MyInput value={email} onChange={e=>setEmail(e.target.value)} type="email" placeholder="Email"/>
-            <MyInput value={password} onChange={e=>setPassword(e.target.value)} type="password" placeholder="password"/>
-            <MyInput value={date} onChange={e => setDate(e.target.value)} type="date" placeholder="birthday"/>
+            <form action="" className={classes.main}>
+                <MyInput id="audioImage" type="file" accept="image/*" onChange={handleImageUpload} />
+                <MyInput value={name} onChange={e => setName(e.target.value)} type="text" placeholder="Name"/>
+                <MyInput value={surname} onChange={e => setSurname(e.target.value)} type="text" placeholder="Surname"/>
+                <MyInput value={email} onChange={e=>setEmail(e.target.value)} type="email" placeholder="Email"/>
+                <MyInput value={password} onChange={e=>setPassword(e.target.value)} type="password" placeholder="password"/>
+                <MyInput value={date} onChange={e => setDate(e.target.value)} type="date" placeholder="birthday"/>
+                <button type='submit'>save changes</button>
+            </form>
         </div>
     );
 };

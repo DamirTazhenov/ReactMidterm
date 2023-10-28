@@ -17,9 +17,9 @@ const Home = () => {
 
     const createPost = (newPost) =>{
         setPosts([...posts, newPost])
-        alert("create")
     }
     const removePost = (post) => {
+        alert("create")
         setPosts(posts.filter(p => post.id !== p.id))
     }
 

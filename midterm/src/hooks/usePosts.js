@@ -9,6 +9,7 @@ export const useSortedPosts = (posts, sort) => {
                 return [...posts].sort((a, b) => a[sort].localeCompare(b[sort]))
         }, [sort, posts]
     )
+    console.log(sortedPosts)
     return sortedPosts;
 }
 

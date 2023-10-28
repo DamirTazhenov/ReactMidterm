@@ -16,7 +16,7 @@ const PostFilter = ({filter, setFilter}) => {
                 options={
                     [
                         {value:'title', name:'By title'},
-                        {value: 'description', name: 'By description'}
+                        {value: 'body', name: 'By description'}
                     ]
                 }
             />
