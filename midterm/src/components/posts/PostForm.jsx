@@ -6,7 +6,6 @@ const PostForm = ({create}) => {
     const [post, setPost] = useState({title: '', description: ''})
 
     const addNewPost= (e)=>{
-        alert("create")
         e.preventDefault()
         create(post)
         setPost({title: '', description: ''})
