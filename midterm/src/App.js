@@ -10,7 +10,7 @@ function App() {
       createRoutesFromElements(
           <Route path='/' element={<Root />}>
             <Route index element={<Home />} path='/'/>
-            <Route element={<Post />} path='/posts'/>
+            <Route element={<Post />} path='/posts/:postId'/>
             <Route element={<Profile />} path='/profile'/>
           </Route>
       ), )

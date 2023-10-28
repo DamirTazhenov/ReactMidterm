@@ -1,6 +1,7 @@
 import React from 'react';
 import MyButton from "../../UI/button/MyButton";
 import classes from "./Post.module.css"
+import {Link} from "react-router-dom";
 
 const Post = ({index, post, remove}) => {
 
@@ -12,7 +13,7 @@ const Post = ({index, post, remove}) => {
     return (
         <div className={classes.post}>
             <div className={classes.postText}>
-                <h1>{index}. {post.title}</h1>
+                <Link to="/posts/:postId"><h1>{index}. {post.title}</h1></Link>
                 <p>{post.body}</p>
             </div>
             <div className={classes.postBtn}>
