@@ -1,0 +1,13 @@
+.nav{
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: cornflowerblue;
+}
+
+.navItems {
+    margin: 5px;
+    color: bisque;
+}
